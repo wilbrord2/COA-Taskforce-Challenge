@@ -14,8 +14,13 @@ body{
     align-items: center;
     gap: 1px;
     overflow:hidden;
+    width: 100%;
+    
 }
-
+.image{
+    Width: 293px;
+    Height:588px;
+}
 .image:hover{
     transition: .4s ease-in-out;
     transform:scale(1.05);
@@ -82,3 +87,30 @@ opacity: calc(70%);
     display: none;
     transition: .3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    
+body{
+    box-sizing: border-box;
+    background-color: black;
+}
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .info{
+        display: none;
+    }
+    .show{
+        display: none;
+    }
+    .infOnHover{
+        display: none;
+    }
+  }
